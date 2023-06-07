@@ -1,3 +1,4 @@
+using HelloWorldClient.Workers;
 using HelloWorldInterfaces;
 
 namespace HelloWorldClient;

@@ -2,7 +2,7 @@ using HelloWorldInterfaces;
 using Orleans.Runtime;
 using Orleans.Streams;
 
-namespace HelloWorldClient;
+namespace HelloWorldClient.Workers;
 
 public sealed class StreamWorker : IHostedService
 {

@@ -1,6 +1,6 @@
 using HelloWorldInterfaces;
 
-namespace HelloWorldClient;
+namespace HelloWorldClient.Workers;
 
 public sealed class TemperatureWorker : BackgroundService
 {

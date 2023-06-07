@@ -1,7 +1,7 @@
 using HelloWorldInterfaces;
 using Orleans.Transactions;
 
-namespace HelloWorldClient;
+namespace HelloWorldClient.Workers;
 
 public sealed class MoneyTransferGrainWorker : BackgroundService
 {
@@ -38,7 +38,7 @@ public sealed class MoneyTransferGrainWorker : BackgroundService
         var transferAccouns = get_FromId_ToId();
 
         IAccountGrain fromAccount = _client.GetGrain<IAccountGrain>(transferAccouns.FromId);
-        IAccountGrain toAccount   = _client.GetGrain<IAccountGrain>(transferAccouns.ToId);
+        IAccountGrain toAccount = _client.GetGrain<IAccountGrain>(transferAccouns.ToId);
 
         int transferAmount = Random.Shared.Next(200);
 
@@ -94,7 +94,7 @@ public sealed class MoneyTransferGrainWorker : BackgroundService
         }
 
         IAccountGrain fromAccount = _client.GetGrain<IAccountGrain>(transferAccouns.FromId);
-        IAccountGrain toAccount   = _client.GetGrain<IAccountGrain>(transferAccouns.ToId);
+        IAccountGrain toAccount = _client.GetGrain<IAccountGrain>(transferAccouns.ToId);
 
         await displayBalance(fromAccount, toAccount, transferAmount);
     }
@@ -112,7 +112,7 @@ public sealed class MoneyTransferGrainWorker : BackgroundService
     private async Task displayBalance(IAccountGrain fromAccount, IAccountGrain toAccount, int transferAmount)
     {
         decimal fromBalance = await fromAccount.GetBalance();
-        decimal toBalance   = await toAccount.GetBalance();
+        decimal toBalance = await toAccount.GetBalance();
 
         _logger.LogInformation("Transferred {amount} credits from {fromId} to {toId}", transferAmount, fromAccount.GetPrimaryKeyString(), toAccount.GetPrimaryKeyString());
         _logger.LogInformation("FromBalance: {fromBalance} | ToBalance: {toBalance}", fromBalance, toBalance);
