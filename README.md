@@ -18,6 +18,7 @@ I tested the following features - [Microsoft Orleans documentation](https://lear
 - [Code sample browser](https://learn.microsoft.com/en-us/samples/browse/?filter-products=orle&products=dotnet-orleans) 📚
 - [SignalR.Orleans](https://github.com/OrleansContrib/SignalR.Orleans) 👤*OrleansContrib*
 - [Articles, videos and samples](https://awesome-architecture.com/actor-model-architecture/orleans) 📓*Awesome Software Architecture*
+- [Introduction to Actor-based development with Orleans](https://youtu.be/-NdkAW_NAb8) 📽️*1hour - Chris Klug - NDC Oslo 2023*
 
 ##### Personal Note
 
