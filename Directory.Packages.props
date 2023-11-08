@@ -6,15 +6,15 @@
   <ItemGroup>
     <PackageVersion Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
 
-    <PackageVersion Include="Microsoft.Orleans.Server" Version="7.2.1" />
-    <PackageVersion Include="Microsoft.Orleans.Client" Version="7.2.1" />
-    <PackageVersion Include="Microsoft.Orleans.Sdk" Version="7.2.1" />
-    <PackageVersion Include="Microsoft.Orleans.Reminders" Version="7.2.1" />
-    <PackageVersion Include="Microsoft.Orleans.Transactions" Version="7.2.1" />
-    <PackageVersion Include="Microsoft.Orleans.Streaming" Version="7.2.1" />
+    <PackageVersion Include="Microsoft.Orleans.Server" Version="7.2.3" />
+    <PackageVersion Include="Microsoft.Orleans.Client" Version="7.2.3" />
+    <PackageVersion Include="Microsoft.Orleans.Sdk" Version="7.2.3" />
+    <PackageVersion Include="Microsoft.Orleans.Reminders" Version="7.2.3" />
+    <PackageVersion Include="Microsoft.Orleans.Transactions" Version="7.2.3" />
+    <PackageVersion Include="Microsoft.Orleans.Streaming" Version="7.2.3" />
 
-    <PackageVersion Include="Microsoft.Orleans.Persistence.AzureStorage" Version="7.2.1" />
-    <PackageVersion Include="Microsoft.Orleans.Streaming.AzureStorage" Version="7.2.1" />
+    <PackageVersion Include="Microsoft.Orleans.Persistence.AzureStorage" Version="7.2.3" />
+    <PackageVersion Include="Microsoft.Orleans.Streaming.AzureStorage" Version="7.2.3" />
 
     <PackageVersion Include="OrleansDashboard" Version="7.2.2" />
   </ItemGroup>
