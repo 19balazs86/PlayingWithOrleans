@@ -15,10 +15,11 @@ I tested the following features - [Microsoft Orleans documentation](https://lear
 
 #### Resources
 
-- [Code sample browser](https://learn.microsoft.com/en-us/samples/browse/?filter-products=orle&products=dotnet-orleans) 📚
+- [Code sample browser](https://learn.microsoft.com/en-us/samples/browse/?filter-products=orle&products=dotnet-orleans) 📚*MS-Learn*
 - [SignalR.Orleans](https://github.com/OrleansContrib/SignalR.Orleans) 👤*OrleansContrib*
 - [Articles, videos and samples](https://awesome-architecture.com/actor-model-architecture/orleans) 📓*Awesome Software Architecture*
 - [Introduction to Actor-based development with Orleans](https://youtu.be/-NdkAW_NAb8) 📽️*1hour - Chris Klug - NDC Oslo 2023*
+- [Orleans support in Aspire](https://devblogs.microsoft.com/dotnet/whats-new-in-orleans-8) 📚*MS-DevBlog* | [Voting sample app](https://learn.microsoft.com/en-us/samples/dotnet/aspire-samples/orleans-voting-sample-app-on-aspire) 📚*MS-Learn*
 
 ##### Personal Note
 
