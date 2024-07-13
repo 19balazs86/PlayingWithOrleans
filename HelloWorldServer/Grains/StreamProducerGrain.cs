@@ -1,18 +1,17 @@
 ﻿using HelloWorldInterfaces;
-using Orleans.Runtime;
 using Orleans.Streams;
 
 namespace HelloWorldServer.Grains;
 
 public sealed class StreamProducerGrain : Grain, IStreamProducerGrain
 {
-    private readonly TimeSpan _timerPeriod = TimeSpan.FromSeconds(3);
+    private readonly GrainTimerCreationOptions _timerOptions = new() { DueTime = TimeSpan.Zero, Period = TimeSpan.FromSeconds(3), KeepAlive = true };
 
     private readonly ILogger<StreamProducerGrain> _logger;
 
     private IAsyncStream<int>? _stream;
 
-    private IDisposable? _disposableTimer;
+    private IGrainTimer? _disposableTimer;
 
     private int _counter = 0;
 
@@ -30,9 +29,9 @@ public sealed class StreamProducerGrain : Grain, IStreamProducerGrain
 
         _stream = this.GetStreamProvider(Constants.StreamProviderName).GetStream<int>(streamId);
 
-        _disposableTimer = RegisterTimer(timerOnTick, null, TimeSpan.Zero, _timerPeriod);
+        _disposableTimer = this.RegisterGrainTimer(timerCallBack, _timerOptions);
 
-        _logger.LogInformation("I will produce a new event every {Period}.", _timerPeriod);
+        _logger.LogInformation("I will produce a new event every {Period}.", _timerOptions.Period);
 
         return Task.CompletedTask;
     }
@@ -49,7 +48,7 @@ public sealed class StreamProducerGrain : Grain, IStreamProducerGrain
         return Task.CompletedTask;
     }
 
-    private async Task timerOnTick(object state)
+    private async Task timerCallBack(CancellationToken ct = default)
     {
         _counter++;
 

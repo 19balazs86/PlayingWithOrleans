@@ -5,9 +5,9 @@ In this repository, I have started an experimentation with Orleans as an Actor M
 I tested the following features - [Microsoft Orleans documentation](https://learn.microsoft.com/en-us/dotnet/orleans/overview) 📚
 
 - [Persistence](https://learn.microsoft.com/en-us/dotnet/orleans/grains/grain-persistence)
-- [Reminder](https://learn.microsoft.com/en-us/dotnet/orleans/grains/timers-and-reminders)
+- [Timers and Reminders](https://learn.microsoft.com/en-us/dotnet/orleans/grains/timers-and-reminders)
 - [Startup tasks](https://learn.microsoft.com/en-us/dotnet/orleans/host/configuration-guide/startup-tasks)
-- [Transactions](https://learn.microsoft.com/en-us/dotnet/orleans/grains/transactions) - *[Reentrancy or Interleaving](https://learn.microsoft.com/en-us/dotnet/orleans/grains/reentrancy) for the AccountGrain, [Stateless worker](https://learn.microsoft.com/en-us/dotnet/orleans/grains/stateless-worker-grains) for the MoneyTransferGrain*
+- [Transactions](https://learn.microsoft.com/en-us/dotnet/orleans/grains/transactions) - *[Reentrancy or Interleaving](https://learn.microsoft.com/en-us/dotnet/orleans/grains/request-scheduling#reentrancy) for the AccountGrain, [Stateless worker](https://learn.microsoft.com/en-us/dotnet/orleans/grains/stateless-worker-grains) for the MoneyTransferGrain*
 - [Observers](https://learn.microsoft.com/en-us/dotnet/orleans/grains/observers)
 - [Streaming](https://learn.microsoft.com/en-us/dotnet/orleans/streaming)
 - [Unit testing](https://learn.microsoft.com/en-us/dotnet/orleans/implementation/testing)
