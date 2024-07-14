@@ -1,6 +1,6 @@
 ﻿{
   "profiles": {
-    "HelloWorldClient": {
+    "Worker-Client": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "environmentVariables": {

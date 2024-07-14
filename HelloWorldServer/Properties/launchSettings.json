@@ -1,6 +1,6 @@
 ﻿{
   "profiles": {
-    "HelloWorldServer": {
+    "Orleans-Server": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "environmentVariables": {

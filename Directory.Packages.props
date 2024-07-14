@@ -1,4 +1,5 @@
 ﻿<Project>
+
   <PropertyGroup>
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
   </PropertyGroup>
@@ -8,7 +9,6 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
-
 
   <ItemGroup>
     <PackageVersion Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
@@ -20,9 +20,7 @@
     <PackageVersion Include="Microsoft.Orleans.Transactions" Version="8.2.0" />
     <PackageVersion Include="Microsoft.Orleans.Streaming" Version="8.2.0" />
 
-    <PackageVersion Include="Microsoft.Orleans.Persistence.AzureStorage" Version="8.2.0" />
-    <PackageVersion Include="Microsoft.Orleans.Streaming.AzureStorage" Version="8.2.0" />
-
-    <PackageVersion Include="OrleansDashboard" Version="8.0.0" />
+    <PackageVersion Include="OrleansDashboard" Version="8.2.0" />
   </ItemGroup>
+
 </Project>

@@ -43,10 +43,13 @@ public static class Program
         {
             // Consider using: Microsoft.Orleans.GrainDirectory.AzureStorage or Redis
             // https://learn.microsoft.com/en-us/dotnet/orleans/host/grain-directory
+            // builder.AddAzureTableGrainDirectory("my-grain-directory", options => options.ConnectionString = azureStorageConnString);
 
-            //builder.AddAzureTableGrainStorage(StreamStorageName, options => options.ConfigureTableServiceClient(azureStorageConnString));
+            // Install-Package Microsoft.Orleans.Persistence.AzureStorage
+            // builder.AddAzureTableGrainStorage(StreamStorageName, options => options.ConfigureTableServiceClient(azureStorageConnString));
 
-            //builder.AddAzureQueueStreams(Constants.StreamProviderName, (SiloAzureQueueStreamConfigurator configurator) => configurator.ConfigureAzureQueue(options => options.Configure(aqo => aqo.ConfigureQueueServiceClient(azureStorageConnString))));
+            // Install-Package Microsoft.Orleans.Streaming.AzureStorage
+            // builder.AddAzureQueueStreams(Constants.StreamProviderName, (SiloAzureQueueStreamConfigurator configurator) => configurator.ConfigureAzureQueue(options => options.Configure(aqo => aqo.ConfigureQueueServiceClient(azureStorageConnString))));
         }
 
         builder.UseTransactions();
