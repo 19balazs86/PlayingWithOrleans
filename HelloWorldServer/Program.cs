@@ -31,6 +31,9 @@ public static class Program
         {
             builder.UseLocalhostClustering();
 
+            // You can add a default storage provider and no need to define the providerName parameter for any IPersistentState
+            // builder.AddMemoryGrainStorage(ProviderConstants.DEFAULT_STORAGE_PROVIDER_NAME);
+
             builder.AddMemoryGrainStorage(CounterStorageName);
             builder.AddMemoryGrainStorage(TransactionStorageName);
             builder.AddMemoryGrainStorage(StreamStorageName);
