@@ -1,8 +1,6 @@
 # Playing with Microsoft Orleans
 
-In this repository, I have started an experimentation with Orleans as an Actor Model.
-
-I tested the following features - [Microsoft Orleans documentation](https://learn.microsoft.com/en-us/dotnet/orleans/overview) 📚
+In this repository, I have started exploring Orleans as an Actor Model, utilizing the following features
 
 - [Persistence](https://learn.microsoft.com/en-us/dotnet/orleans/grains/grain-persistence)
 - [Timers and Reminders](https://learn.microsoft.com/en-us/dotnet/orleans/grains/timers-and-reminders)
@@ -15,6 +13,9 @@ I tested the following features - [Microsoft Orleans documentation](https://lear
 
 #### Resources
 
+- [Documentation](https://learn.microsoft.com/en-us/dotnet/orleans/overview) 📚*MS-Learn*
+  - [Best practices](https://learn.microsoft.com/en-us/dotnet/orleans/resources/best-practices)
+  - [NuGet packages](https://learn.microsoft.com/en-us/dotnet/orleans/resources/nuget-packages)
 - [Code sample browser](https://learn.microsoft.com/en-us/samples/browse/?filter-products=orle&products=dotnet-orleans) 📚*MS-Learn*
 - [SignalR.Orleans](https://github.com/OrleansContrib/SignalR.Orleans) 👤*OrleansContrib*
 - [Articles, videos and samples](https://awesome-architecture.com/actor-model-architecture/orleans) 📓*Awesome Software Architecture*
