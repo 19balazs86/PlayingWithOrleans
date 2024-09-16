@@ -1,6 +1,5 @@
 ﻿using HelloWorldInterfaces;
 using HelloWorldServer.Grains;
-using Orleans.Runtime;
 using Orleans.Timers;
 
 namespace HelloWorldServer.StartupTasks;
@@ -8,7 +7,7 @@ namespace HelloWorldServer.StartupTasks;
 public sealed class InitReminderStartupTask : IStartupTask
 {
     private readonly TimeSpan _dueTime = TimeSpan.FromSeconds(5);
-    private readonly TimeSpan _period  = TimeSpan.FromMinutes(1); // Minimum allowed reminder period is 1 minute!
+    private readonly TimeSpan _period  = TimeSpan.FromMinutes(1); // 1 minute is the default minimum value, defined using Configure<ReminderOptions>
 
     private readonly IGrainFactory _grainFactory;
     private readonly IReminderRegistry _reminderRegistry;
