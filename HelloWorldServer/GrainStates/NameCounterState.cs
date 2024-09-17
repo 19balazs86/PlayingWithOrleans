@@ -1,6 +1,6 @@
 ﻿namespace HelloWorldServer.GrainStates;
 
-[Serializable]
+[GenerateSerializer]
 public sealed class NameCounterState
 {
     public int Counter { get; set; } = 0;
