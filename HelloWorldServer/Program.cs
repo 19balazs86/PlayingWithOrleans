@@ -52,7 +52,7 @@ public static class Program
             // builder.AddAzureTableGrainStorage(StreamStorageName, options => options.ConfigureTableServiceClient(azureStorageConnString));
 
             // Install-Package Microsoft.Orleans.Streaming.AzureStorage
-            // builder.AddAzureQueueStreams(Constants.StreamProviderName, (SiloAzureQueueStreamConfigurator configurator) => configurator.ConfigureAzureQueue(options => options.Configure(aqo => aqo.ConfigureQueueServiceClient(azureStorageConnString))));
+            // builder.AddAzureQueueStreams(Constants.StreamProviderName, (SiloAzureQueueStreamConfigurator configurator) => configurator.ConfigureAzureQueue(options => options.Configure(aqo => aqo.QueueServiceClient = new QueueServiceClient(azureStorageConnString))));
         }
 
         builder.UseTransactions();
